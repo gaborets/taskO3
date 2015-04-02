@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 1000px;
+        }
+        form {
+            float: left;
+            width: 600px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 25px;
+        }
+
+        form > div {
+            float: left;
+            width: 100%;
+            line-height: 25px;
+        }
+
+        form > div > div {
+            float: left;
+            font-size: 14px;
+            color: #333;
+            width: 350px;
+        }
+
+        form > div > input[type='text'] {
+            padding: 4px;
+            float: left;
+            font-size: 14px;
+            width: 150px;
+        }
+
+        form > input[type='submit'] {
+            float: right;
+            background: cornsilk;
+            color: #333333;
+            width: 161px;
+            margin-right: 89px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .con, header {
+            float: left;
+            width: 100%;
+        }
+
+        header {
+            color: #069;
+            font-size: 18px;
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        .f, .s {
+            float: left;
+            width: 100%;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        .f li {
+            float: left;
+            width: 98%;
+            padding: 1%;
+            border: 1px solid;
+        }
+
+        .f div {
+            font-family: "Arial Black", arial-black;
+            float: left;
+            width: 100%;
+        }
+
+        .n span {
+            color: #006699;
+        }
+    </style>
+    <title>Тестовое задание</title>
+</head>
+<body>
+    <div>
+      <form method="post" action="./index/generate">
+          <div>
+              <div>Количество нужных сгенерированных комментариев</div>
+              <input type="text" name="num_comment" value="100" />
+          </div>
+          <input type="submit" value="сгенерировать"/>
+      </form>
+    </div>
+    <header>Комментарии:</header>
+    <div class="con">
+        #content#
+    </div>
+</body>
+</html>
